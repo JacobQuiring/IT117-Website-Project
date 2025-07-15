@@ -1,0 +1,87 @@
+@charset "utf-8";
+body {
+	background-color: #3b3b3b;
+	font-family: Arial, Tahoma, sans-serif;
+}
+h1 {
+	color: #ffffff;
+}
+header {
+	background-color: #e61519;
+	color: #ffffff;
+	text-align: center;
+	padding: 5px;
+	width: 80%;
+	margin-left: 10%;
+}
+#container {
+	width: 100%;
+}
+main {
+	width: 80%;
+	background-color: #e61519;
+	float: left;
+	padding: 5px;
+	margin-left: 10%;
+}
+footer {
+	clear: both;
+	background-color: #00aadd;
+	color: #ffffff;
+	text-align: center;
+	margin-left: 10%;
+	padding: 5px;
+	font-size: 12pt;
+	width: 80%;
+	font-style: italic;
+}
+footer p a:hover {
+	color: #ffffff;
+}
+nav {
+	padding: 5px;
+	width: 80%;
+	margin-left: 15%;
+	font-weight: bold;
+	font-style: italic;
+}
+nav ul {
+	list-style: none;
+}
+nav ul li {
+	float: left;
+	padding: 5px;
+}
+nav ul li a:link, nav ul li a:visited {
+	display: block;
+	width: 150px;
+	margin-right: 4px;
+	padding: 2px 4px 2px 4px;
+	background-color: #1ebeef;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	color: #ffffff;
+	background-color: #9b30ff;
+}
+table {
+	border: 1px solid #000000;
+	border-spacing: 10px;
+	margin: 0 auto;
+	background-color: #3b3b3b;
+}
+table tr th, table tr td {
+	border: 1px solid #000000;
+	padding: 5px;
+}
+#table-width {
+	width: 70%;
+}
+
+.headingcolor {
+	background-color: #e61519;
+	color: #ffffff;
+}
+.itemcolor {
+	background-color: #1ebeef;
+}

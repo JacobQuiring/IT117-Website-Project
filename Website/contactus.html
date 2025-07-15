@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<title>Jake's Breakfast, Lunch, &#38; Diner - Contact Us</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<style>
+		form {
+			background-color: #00aadd;
+			padding: 50px;
+			border: 1px groove #770c05;
+			border-radius: 100px;
+		}
+		input, textarea, select, button {
+			background-color: #aed8ff;
+			
+		}
+		input, textarea {
+			border: 1px solid #414141;
+		}
+		label {
+			color: #770c05;
+		}
+		input[type=number] {
+			background-color: #c5c5c5;
+		}
+		input[type=submit] {
+			background-color: #b21519;
+			color: #ffffff;
+		}
+		</style>
+	</head>
+	<body id="container">
+		<header><img src="images/logo.jpg" alt="Logo" Width="200" height="150">
+		<h1>Contact Jake's B. L. Diner</h1></header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home Page</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="history.html">History</a></li>
+				<li><a href="chef.html">Our Chef</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+				<li><a href="requestform.html">Special Menu Requests</a></li>
+			</ul>
+		</nav>
+		<main>
+			<h2>Give Us a Holler</h2>
+			<form action="#" method="post" autocomplete="on">
+			<fieldset>
+				<label for="fname">First Name:</label><br>
+				<input type="text" id="fname" name="fname" required><br><br>
+				<label for="lname">Last Name:</label><br>
+				<input type="text" id="lname" name="lname" required><br><br>
+				<label for="email">Email Address:</label><br>
+				<input type="email" autocomplete="off" id="email" name="email" required><br><br>
+				<label for="phone">Phone Number:</label><br>
+				<input type="tel" id="phone" name="phone"><br><br>
+				<h3>Enter your four-digit passcode, then click OK:</h3>
+				<input id="id1" type="number" min="1000" max="9999" name="submit">
+				<button onclick="myFunction()" name="submit">OK</button>
+				<p id="passcode"></p>
+				<script>
+					function myFunction() {
+					var inpObj = document.getElementByld("id1");
+					if (inpObj.checkValidity() == false) {
+					document.getElementById("passcode").innerHTML = inpObj.validationMessage;
+					} else {
+					document.geElementById("passcode").innerHTML = "Passcode Valid";
+					}
+					}
+				</script>
+
+				<label for="comment">Comments:</label><br>
+				<textarea id="comment" name="comment" rows="10" cols="50"></textarea><br><br>
+			</fieldset><br>
+				<label>Food Allergies</label><br><br>
+				<input type="checkbox" name="allergy" value="gluten"><label>Gluten</label><br>
+				<input type="checkbox" name="allergy" value="lactose"><label>Lactose</label><br>
+				<input type="checkbox" name="allergy" value="peanuts"><label>Peanuts</label><br>
+				<input type="checkbox" name="allergy" value="shellfish"><label>Shellfish</label><br>
+				<input type="checkbox" name="allergy" value="nuts"><label>Nuts</label><br>
+				<br>
+				<label>Have you visited before? </label><br><br>
+				<input type="radio" name="visited" value="yes"><label>Yes</label><br>
+				<input type="radio" name="visited" value="no"><label>No</label><br><br>
+				<label for="customertype">Where are you from?</label>
+				<select name="customertype" id="customertype">
+					<option value="select">Select One</option>
+					<option value="local">Local</option>
+					<option value="visiting">Visiting</option>
+				</select><br><br>
+				<button type="reset">Clear Form</button><br><br>
+				<input type="submit">
+			</form>
+		</main>
+		<footer>
+			<p>
+				<a href="index.html">Home Page</a> |
+				<a href="aboutus.html">About Us</a> |
+				<a href="history.html">History</a> |
+				<a href="menu.html">Menu</a> |
+				<a href="chef.html">Our Chef</a> |
+				<a href="contactus.html">Contact Us</a> |
+				<a href="requestform.html">Special Menu Requests</a> 
+			</p>
+		</footer>
+	</body>
+</html>
+
